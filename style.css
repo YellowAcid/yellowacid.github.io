@@ -11,6 +11,25 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.preloader 
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #f5f5f5;
+    position: absolute;
+    transition: .8s ease-in-out;
+}
+
+.preloader.hide
+{
+    opacity: 0;
+    z-index: -1;
 }
 
 .main-block
@@ -36,6 +55,7 @@ body
     font-size: 4em;
     font-weight: 800;
     text-align: center;
+    transition: .1s ease-in-out;
 }
 
 .photo-block
@@ -53,6 +73,7 @@ body
     height: 450px;
     background: url(Img/my_photo.png) center no-repeat;
     background-size: cover;
+    transition: .1s ease-in-out;
 }
 
 .about-me-block
@@ -84,6 +105,7 @@ body
     font-size: 2em;
     font-weight: 800;
     line-height: 150%;
+    transition: .1s ease-in-out;
 }
 
 .about-me-text
@@ -92,6 +114,7 @@ body
     text-align: center;
     line-height: 150%;
     margin: 0 10px;
+    transition: .1s ease-in-out;
 }
 
 .my-skills-row
@@ -115,6 +138,7 @@ body
     font-size: 2em;
     font-weight: 800;
     text-align: center;
+    transition: .1s ease-in-out;
 }
 
 .my-skills-columns
@@ -123,7 +147,6 @@ body
     margin-top: 45px;
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
 }
 
 .my-skills-column
@@ -133,6 +156,7 @@ body
     flex-direction: column;
     text-align: center;
     margin: 0 20px;
+    transition: .1s ease-in-out;
 }
 
 .footer
@@ -187,7 +211,6 @@ body
     padding: 10px 20px 5px 20px;
     cursor: pointer;
     transition: .1s ease-in-out;
-    
 }
 
 .contact:hover
@@ -232,15 +255,15 @@ body
 
     .contact
     {
-        padding: 1vw 2vw 0.5vw 2vw;
+        padding: 10px 20px 5px 20px;
         cursor: pointer;
         transition: .1s ease-in-out;
     }
 
     .contact>svg
     {
-        width: 5vw;
-        height: 5vw;
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -293,5 +316,57 @@ body
     {
         margin-top: -125px;
         padding-top: 125px;
+    }
+
+    .contact
+    {
+        padding: 10px 15px 5px 15px;
+        cursor: pointer;
+        transition: .1s ease-in-out;
+    }
+
+    .contact>svg
+    {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    body
+    {
+        font-size: 12px;
+    }
+
+    .photo-block
+    {
+        height: 150px;  
+        margin-top: -75px;
+    }
+    
+    .photo
+    {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-me-block
+    {
+        margin-top: -75px;
+        padding-top: 75px;
+    }
+
+    .contact
+    {
+        padding: 10px 10px 5px 10px;
+        cursor: pointer;
+        transition: .1s ease-in-out;
+    }
+
+    .contact>svg
+    {
+        width: 20px;
+        height: 20px;
     }
 }
