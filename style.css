@@ -200,6 +200,11 @@ body
     align-items: center;
     justify-content: space-between;
     border-radius: 30px;
+    transition: .1s ease-in-out;
+}
+
+.contacts:hover{
+    background-color: #272727;
 }
 
 .contact
@@ -207,11 +212,6 @@ body
     padding: 10px 20px 5px 20px;
     cursor: pointer;
     transition: .1s ease-in-out;
-}
-
-.contact:hover
-{
-    filter: drop-shadow(0px 0px 2px white);
 }
 
 .contact:active
